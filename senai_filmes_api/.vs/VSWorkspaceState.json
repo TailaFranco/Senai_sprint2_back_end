@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\senai_filmes_api",
+    "\\senai_filmes_api\\Controllers",
+    "\\senai_filmes_api\\Domains",
+    "\\senai_filmes_api\\Interfaces",
+    "\\senai_filmes_api\\Repositories"
+  ],
+  "SelectedNode": "\\senai_filmes_api\\Repositories\\GeneroRepository.cs",
+  "PreviewInSolutionExplorer": false
+}
