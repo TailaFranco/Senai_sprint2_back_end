@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "68585bda-6a1a-43f7-b832-9c268b8da4d9",
+		"name": "InLock_Manha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/Usuario/Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@admin.com\",\r\n    \"senha\" : \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Usuario/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Usuario",
+						"Login"
+					]
+				},
+				"description": "Teste do Método Login / geração de token de autenticação OK "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/Estudios",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiQ2xhaW0gcGVyc29uYWxpemFkYSI6IlZhbG9yIFRlc3RlIiwiZXhwIjoxNjE5MDQ3MjY2LCJpc3MiOiJJbkxvY2sud2ViQXBpIiwiYXVkIjoiSW5Mb2NrLndlYkFwaSJ9.jEvI98Dz08mCcQ0QW21bUzQ7R918FpttEETKELUYz4M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Estudios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Estudios"
+					]
+				},
+				"description": "Método Listar Todos, lista todos os estudios após a inserção do token de autenticação (somente usuários logados podem listar)."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/Estudios",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiQ2xhaW0gcGVyc29uYWxpemFkYSI6IlZhbG9yIFRlc3RlIiwiZXhwIjoxNjE5MDQ3MjY2LCJpc3MiOiJJbkxvY2sud2ViQXBpIiwiYXVkIjoiSW5Mb2NrLndlYkFwaSJ9.jEvI98Dz08mCcQ0QW21bUzQ7R918FpttEETKELUYz4M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeEstudio\" : \"Ubisoft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Estudios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Estudios"
+					]
+				},
+				"description": "Método Cadastrar novo Estudio executado com sucesso. Necessário autenticação do nível de administrador para cadastrar OK"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/Estudios",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiQ2xhaW0gcGVyc29uYWxpemFkYSI6IlZhbG9yIFRlc3RlIiwiZXhwIjoxNjE5MDQ3MjY2LCJpc3MiOiJJbkxvY2sud2ViQXBpIiwiYXVkIjoiSW5Mb2NrLndlYkFwaSJ9.jEvI98Dz08mCcQ0QW21bUzQ7R918FpttEETKELUYz4M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idEstudio\": \"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Estudios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Estudios"
+					]
+				},
+				"description": "Método Deletar implementado com sucesso "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/Estudios/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Estudios/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Estudios",
+						"2"
+					]
+				},
+				"description": "Método de Buscar id pela URL implementado com sucesso"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/Estudios/4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeEstudio\": \"EA Sports\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Estudios/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Estudios",
+						"4"
+					]
+				},
+				"description": "Método Atualizar por URL implementado com sucesso"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/Jogos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiQ2xhaW0gcGVyc29uYWxpemFkYSI6IlZhbG9yIFRlc3RlIiwiZXhwIjoxNjE5MDU2NjQwLCJpc3MiOiJJbkxvY2sud2ViQXBpIiwiYXVkIjoiSW5Mb2NrLndlYkFwaSJ9.J04QD2Tc7g7mPlGeFW3uIV3vq9OZjYzuQRjLMjW8hvU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Jogos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Jogos"
+					]
+				},
+				"description": "Método listar todos da lista de jogos implementado com sucesso."
+			},
+			"response": []
+		}
+	]
+}
