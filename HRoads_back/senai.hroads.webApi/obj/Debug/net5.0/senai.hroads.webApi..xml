@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.hroads.webApi.</name>
+    </assembly>
+    <members>
+        <member name="M:senai.hroads.webApi_.Interfaces.IHabilidadeRepository.ListarTipo">
+            <summary>
+            Lista todas as habilidades com seus respectivos tipos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Interfaces.ITipoRepository.ListarHabilidade">
+            <summary>
+            Lista todas as habilidades com seus respectivos tipos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:senai.hroads.webApi_.Repositories.ClasseHabilidadeRepository.ctx">
+            <summary>
+            Objeto contexto (ctx) que funciona como minha stringConexao
+            </summary>
+        </member>
+        <member name="F:senai.hroads.webApi_.Repositories.ClasseRepository.ctx">
+            <summary>
+            Objeto contexto (ctx) que funciona como minha stringConexao
+            </summary>
+        </member>
+        <member name="F:senai.hroads.webApi_.Repositories.HabilidadeRepository.ctx">
+            <summary>
+            Objeto contexto (ctx) que funciona como minha stringConexao
+            </summary>
+        </member>
+        <member name="F:senai.hroads.webApi_.Repositories.JogoRepository.ctx">
+            <summary>
+            Objeto contexto (ctx) que funciona como minha stringConexao
+            </summary>
+        </member>
+        <member name="F:senai.hroads.webApi_.Repositories.PersonagemRepository.ctx">
+            <summary>
+            Objeto contexto (ctx) que funciona como minha stringConexao
+            </summary>
+        </member>
+        <member name="F:senai.hroads.webApi_.Repositories.TipoRepository.ctx">
+            <summary>
+            Objeto contexto (ctx) que funciona como minha stringConexao
+            </summary>
+        </member>
+        <member name="F:senai.hroads.webApi_.Repositories.TiposUsuarioRepository.ctx">
+            <summary>
+            Objeto contexto (ctx) que funciona como minha stringConexao
+            </summary>
+        </member>
+        <member name="F:senai.hroads.webApi_.Repositories.UsuarioRepository.ctx">
+            <summary>
+            Objeto contexto (ctx) que funciona como minha stringConexao
+            </summary>
+        </member>
+    </members>
+</doc>
